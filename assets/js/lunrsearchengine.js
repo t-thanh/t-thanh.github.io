@@ -7,8 +7,8 @@ var documents = [{
     }, {
     "id": 1,
     "url": "thanh.be/about",
-    "title": "Đây là đâu và tôi là ai?",
-    "body": "About me: I'm Thành. I'm engineer, husband, father, also runner, reader, learner, creator, and writer. This blog is about me as a writer. Our Location: Gladioolstraat3800 Sint-TruidenLimburg, BelgiumLoading. . . "
+    "title": "About me",
+    "body": "I'm Thành: Researcher - Runner - Reader Strava Profile: Location: Gladioolstraat3800 Sint-TruidenLimburg, BelgiumLoading. . . "
     }, {
     "id": 2,
     "url": "thanh.be/author/bigfoot/",
