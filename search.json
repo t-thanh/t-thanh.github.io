@@ -3,6 +3,16 @@
       
       
     {
+      "title"    : "The Practice của Seth Godin",
+      "category" : "",
+      "tags"     : "productivity, book, creative",
+      "url"      : "/book-the-practice/",
+      "date"     : "2021-05-03 00:00:00 +0200"
+    } ,
+  
+      
+      
+    {
       "title"    : "Powerful things you can do with the Markdown editor",
       "category" : "",
       "tags"     : "",
@@ -127,16 +137,6 @@
       "category" : "",
       "tags"     : "",
       "url"      : "/quick-start-guide/",
-      "date"     : "2018-01-11 00:00:00 +0100"
-    } ,
-  
-      
-      
-    {
-      "title"    : "Tại sao",
-      "category" : "",
-      "tags"     : "red, yellow",
-      "url"      : "/customer-service/",
       "date"     : "2018-01-11 00:00:00 +0100"
     } 
   
