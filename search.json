@@ -3,6 +3,16 @@
       
       
     {
+      "title"    : "Tổng hợp posts về chạy bộ",
+      "category" : "",
+      "tags"     : "index, running, overview",
+      "url"      : "/run-index/",
+      "date"     : "2021-05-04 00:00:00 +0200"
+    } ,
+  
+      
+      
+    {
       "title"    : "The Practice của Seth Godin",
       "category" : "",
       "tags"     : "productivity, book, creative",
@@ -128,16 +138,6 @@
       "tags"     : "",
       "url"      : "/is-intelligence-enough/",
       "date"     : "2018-01-12 00:00:00 +0100"
-    } ,
-  
-      
-      
-    {
-      "title"    : "O&#39;Reilly AI Newsletter - Week 27/2019",
-      "category" : "",
-      "tags"     : "",
-      "url"      : "/quick-start-guide/",
-      "date"     : "2018-01-11 00:00:00 +0100"
     } 
   
 ]
