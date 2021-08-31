@@ -3,6 +3,16 @@
       
       
     {
+      "title"    : "Xác định vùng nhịp tim khi chạy",
+      "category" : "",
+      "tags"     : "HRzone, running, heartrate, measure, calculation",
+      "url"      : "/heart-rate-zone/",
+      "date"     : "2021-05-07 00:00:00 +0200"
+    } ,
+  
+      
+      
+    {
       "title"    : "Lọc bỏ - Đánh giá - Tìm kiếm may mắn - Sự chắc chắn",
       "category" : "",
       "tags"     : "productivity, ideas, quotes",
@@ -38,16 +48,6 @@
       "tags"     : "productivity, book, creative",
       "url"      : "/book-the-practice/",
       "date"     : "2021-05-03 00:00:00 +0200"
-    } ,
-  
-      
-      
-    {
-      "title"    : "Education must also train one for quick, resolute and effective thinking.",
-      "category" : "",
-      "tags"     : "",
-      "url"      : "/education/",
-      "date"     : "2018-06-12 00:00:00 +0200"
     } ,
   
       

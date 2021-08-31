@@ -5,9 +5,176 @@
     <description>Progress with quality</description>
     <link>thanh.be/</link>
     <atom:link href="thanh.be/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 06 May 2021 22:44:26 +0200</pubDate>
-    <lastBuildDate>Thu, 06 May 2021 22:44:26 +0200</lastBuildDate>
+    <pubDate>Tue, 31 Aug 2021 23:58:55 +0200</pubDate>
+    <lastBuildDate>Tue, 31 Aug 2021 23:58:55 +0200</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
+    
+      <item>
+        <title>Xác định vùng nhịp tim khi chạy</title>
+        <description>&lt;h2 id=&quot;xác-định-vùng-nhịp-tim&quot;&gt;Xác định vùng nhịp tim&lt;/h2&gt;
+&lt;p&gt;Một cách hết sức đơn giản để xác định HR zone là qua công cụ tính toán có sẵn online. Bản thân mình tín nhiệm công cụ tính toán của website &lt;strong&gt;bergfreunde.eu&lt;/strong&gt; - trang web dành cho người leo núi. BạnBanj click vào link &lt;a href=&quot;https://www.bergfreunde.eu/heart-rate-calculator/&quot;&gt;này&lt;/a&gt;, và nhập theo các bước theo số thứ tự:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Giới tính (Gender)&lt;/li&gt;
+  &lt;li&gt;Tuổi (Age)&lt;/li&gt;
+  &lt;li&gt;Nhịp tim nghỉ (Resting heart rate)&lt;/li&gt;
+  &lt;li&gt;Cân nặng (Weight)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Kết quả sẽ cho ra các số liệu sau:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Nhịp tim tối đa (theo nghiên cứu của Edwards): dành cho người bình thường&lt;/li&gt;
+  &lt;li&gt;Nhịp tim tối đa cho vận động viên (theo nghiên cứu của Spanaus)&lt;/li&gt;
+  &lt;li&gt;Nhịp tim tối ưu lúc luyện tập&lt;/li&gt;
+  &lt;li&gt;Và một bảng gồm có 5 vùng nhịp tim khác nhau:
+    &lt;ul&gt;
+      &lt;li&gt;Zone 1: Fitness Zone: 50-60% của nhịp tim tối đa: tác dụng tốt cho hệ tuần hoàn máu&lt;/li&gt;
+      &lt;li&gt;Zone 2: Fat Burning Zone: 60-70% của nhịp tim rối đa: tác dụng làm tốt cho hệ tuần hoàn máu và giữ dáng&lt;/li&gt;
+      &lt;li&gt;Zone 3: Aerobic Zone: 70-80% nhịp tim tối đa: tác dụng tốt cho hệ tuần hoàn và hô háp, tăng sức bền&lt;/li&gt;
+      &lt;li&gt;Zone 4: Anaerobic Zone: 80-90% nhịp tim tối đa: Cơ thể không lấy đủ lượng oxy cần thiết và vào chế độ hô hấp yếm khí. Vận động viên cần tập thời gian ngắn trong vùng này để tăng mức vận động tối đa.&lt;/li&gt;
+      &lt;li&gt;Zone 5: Red Zone: Trên 90% nhịp tim tối đa: Lưu ý có thể nguy hiểm cho vận động viên phong trào.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div id=&quot;calculator&quot;&gt;
+    &lt;div class=&quot;slidecontainer&quot;&gt;&lt;input class=&quot;slider&quot; id=&quot;age&quot; data-from=&quot;1&quot; data-to=&quot;99&quot; data-dimension=&quot;Jahre&quot; data-step=&quot;1&quot; name=&quot;&quot; value=&quot;30&quot; type=&quot;slider&quot; /&gt;&lt;/div&gt;
+	&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://www.bergfreunde.eu/out/pictures/wysiwigpro/kalkulatoren/css/calculator.css&quot; /&gt;
+	&lt;h1 id=&quot;top&quot;&gt;Maximum heart rate &amp;amp; pulse rate zones&lt;/h1&gt;
+	&lt;div class=&quot;calc-calculator columns small-12&quot;&gt;
+		&lt;div class=&quot;row&quot;&gt;
+			&lt;div class=&quot;columns small-12 medium-12 large-6 calc-section&quot;&gt;
+				&lt;div class=&quot;step-line&quot;&gt;
+					&lt;div class=&quot;step-icon-container&quot;&gt;&lt;span class=&quot;step-icon-text&quot;&gt;1&lt;/span&gt;&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;columns small-12 step-text&quot;&gt;Gender&lt;/div&gt;
+				&lt;div class=&quot;step columns small-6&quot;&gt;
+					&lt;div class=&quot;step-action&quot;&gt;
+						&lt;div class=&quot;calc-button pressed&quot; id=&quot;men&quot;&gt;&lt;img src=&quot;https://www.bergfreunde.eu/out/pictures/wysiwigpro/kalkulatoren/button-male.svg&quot; alt=&quot;Men&quot; /&gt;&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;step columns small-6&quot;&gt;
+					&lt;div class=&quot;step-action&quot;&gt;
+						&lt;div class=&quot;calc-button&quot; id=&quot;women&quot;&gt;&lt;img src=&quot;https://www.bergfreunde.eu/out/pictures/wysiwigpro/kalkulatoren/button-female.svg&quot; alt=&quot;Women&quot; /&gt;&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;columns small-12 medium-12 large-6 calc-section quarter-width&quot;&gt;
+				&lt;div class=&quot;step-line&quot;&gt;
+					&lt;div class=&quot;step-icon-container&quot;&gt;&lt;span class=&quot;step-icon-text&quot;&gt;2&lt;/span&gt;&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;columns small-12 step-text&quot;&gt;Age&lt;/div&gt;
+				&lt;div class=&quot;step columns small-12&quot;&gt;&lt;span id=&quot;output-age&quot;&gt;&lt;/span&gt; years
+					&lt;div class=&quot;columns small-12 step-action half-width&quot;&gt;
+						&lt;div class=&quot;layout-slider&quot;&gt;&lt;input class=&quot;calculator-slider&quot; id=&quot;age&quot; data-from=&quot;1&quot; data-to=&quot;99&quot; data-dimension=&quot;Jahre&quot; data-step=&quot;1&quot; name=&quot;&quot; value=&quot;30&quot; type=&quot;range&quot; /&gt;&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;row&quot;&gt;
+			&lt;div class=&quot;columns small-12 medium-12 large-6 calc-section quarter-width&quot;&gt;
+				&lt;div class=&quot;step-line&quot;&gt;
+					&lt;div class=&quot;step-icon-container&quot;&gt;&lt;span class=&quot;step-icon-text&quot;&gt;3&lt;/span&gt;&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;columns small-12 step-text&quot;&gt;Resting heart rate&lt;/div&gt;
+				&lt;div class=&quot;step columns small-12&quot;&gt;&lt;span id=&quot;output-resting-heart-rate&quot;&gt;&lt;/span&gt; beats/minute
+					&lt;div class=&quot;columns small-12 step-action half-width&quot;&gt;
+						&lt;div class=&quot;layout-slider&quot;&gt;&lt;input class=&quot;calculator-slider&quot; id=&quot;resting-heart-rate&quot; data-from=&quot;30&quot; data-to=&quot;120&quot; data-dimension=&quot;Schläge/Minute&quot; data-step=&quot;1&quot; name=&quot;&quot; value=&quot;70&quot; type=&quot;slider&quot; /&gt;&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;columns small-12 medium-12 large-6 calc-section quarter-width&quot;&gt;
+				&lt;div class=&quot;step-line&quot;&gt;
+					&lt;div class=&quot;step-icon-container&quot;&gt;&lt;span class=&quot;step-icon-text&quot;&gt;4&lt;/span&gt;&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;columns small-12 step-text&quot;&gt;Weight&lt;/div&gt;
+					&lt;div class=&quot;step columns small-12&quot;&gt;&lt;span id=&quot;output-human-weight&quot;&gt;&lt;/span&gt; kg
+						&lt;div class=&quot;columns small-12 step-action half-width&quot;&gt;
+							&lt;div class=&quot;layout-slider&quot;&gt;&lt;input class=&quot;calculator-slider&quot; id=&quot;human-weight&quot; data-from=&quot;20&quot; data-to=&quot;130&quot; data-dimension=&quot;kg&quot; data-step=&quot;1&quot; name=&quot;&quot; value=&quot;80&quot; type=&quot;slider&quot; /&gt;&lt;/div&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div id=&quot;calc-output&quot; style=&quot;display: block&quot;&gt;
+				&lt;div class=&quot;columns small-12&quot;&gt;
+					&lt;p class=&quot;calc-text-center&quot;&gt;&lt;strong&gt;Maximum heart rate (according to Edwards): &lt;span class=&quot;calc-highlight&quot; id=&quot;calc-output-max-puls-edward&quot;&gt;&lt;/span&gt; Beats/minute &lt;/strong&gt;&lt;/p&gt;
+					&lt;p class=&quot;calc-text-center&quot;&gt;&lt;strong&gt;Maximum heart rate for trained athletes (according to Spanaus): &lt;span class=&quot;calc-highlight&quot; id=&quot;calc-output-trained-max-puls&quot;&gt;&lt;/span&gt; Beats/minute &lt;/strong&gt;&lt;/p&gt;
+					&lt;p class=&quot;calc-text-center&quot;&gt;&lt;strong&gt;Optimal training heart rate: &lt;span class=&quot;calc-highlight&quot; id=&quot;calc-output-optimal-training-puls-min&quot;&gt;&lt;/span&gt; to &lt;span class=&quot;calc-highlight&quot; id=&quot;calc-output-optimal-training-puls-max&quot;&gt;&lt;/span&gt; beats/minute &lt;/strong&gt;&lt;/p&gt;
+					&lt;p&gt;The results are average values depending on fitness, genetic predisposition, training level and external factors, this can deviate by +/- 10 beats or more!&lt;/p&gt;
+					&lt;div class=&quot;table-scroll&quot;&gt;
+						&lt;table class=&quot;highlight table-center calc-output-table&quot;&gt;
+						&lt;caption&gt;Your heart rate zones&lt;/caption&gt;
+						&lt;tbody&gt;
+							&lt;tr&gt;
+								&lt;th&gt;Heart rate&lt;/th&gt;
+								&lt;th&gt;Effort zone&lt;/th&gt;
+								&lt;th&gt;Training type&lt;/th&gt;
+								&lt;th&gt;Description&lt;/th&gt;
+							&lt;/tr&gt;
+							&lt;tr&gt;
+								&lt;td&gt;&lt;span class=&quot;calc-highlight&quot; id=&quot;calc-output-table-1-min&quot;&gt;&lt;/span&gt; up to &lt;span class=&quot;calc-highlight&quot; id=&quot;calc-output-table-1-max&quot;&gt;&lt;/span&gt;&lt;/td&gt;
+								&lt;td&gt;Fitness zone&lt;/td&gt;
+								&lt;td&gt;RECOM (Regeneration &amp;amp; Compensation)&lt;/td&gt;
+								&lt;td&gt;50-60% of the maximum heart rate Strengthening of the circulatory system. Perfect for beginners.&lt;/td&gt;
+							&lt;/tr&gt;
+							&lt;tr&gt;
+								&lt;td&gt;&lt;span class=&quot;calc-highlight&quot; id=&quot;calc-output-table-2-min&quot;&gt;&lt;/span&gt; up to &lt;span class=&quot;calc-highlight&quot; id=&quot;calc-output-table-2-max&quot;&gt;&lt;/span&gt;&lt;/td&gt;
+								&lt;td&gt;Fat burning zone&lt;/td&gt;
+								&lt;td&gt;BE 1 (Basic Endurance training 1)&lt;/td&gt;
+								&lt;td&gt;60-70% of the maximum heart rate Maximum calories burnt from fat. Strengthening of the circulatory system and improvement of fitness.&lt;/td&gt;
+							&lt;/tr&gt;
+							&lt;tr&gt;
+								&lt;td&gt;&lt;span class=&quot;calc-highlight&quot; id=&quot;calc-output-table-3-min&quot;&gt;&lt;/span&gt; up to &lt;span class=&quot;calc-highlight&quot; id=&quot;calc-output-table-3-max&quot;&gt;&lt;/span&gt;&lt;/td&gt;
+								&lt;td&gt;Aerobic zone&lt;/td&gt;
+								&lt;td&gt;BE 1/2 (Basic Endurance training 1 to 2)&lt;/td&gt;
+								&lt;td&gt;70-80% of the maximum heart rate Improvement of respiration and circulation. Ideal for increasing endurance.&lt;/td&gt;
+							&lt;/tr&gt;
+							&lt;tr&gt;
+								&lt;td&gt;&lt;span class=&quot;calc-highlight&quot; id=&quot;calc-output-table-4-min&quot;&gt;&lt;/span&gt; up to &lt;span class=&quot;calc-highlight&quot; id=&quot;calc-output-table-4-max&quot;&gt;&lt;/span&gt;&lt;/td&gt;
+								&lt;td&gt;Anaerobic zone&lt;/td&gt;
+								&lt;td&gt;BE 2 (Basic Endurance training 2)&lt;/td&gt;
+								&lt;td&gt;80-90% of the maximum heart rate Body can no longer meet oxygen requirements. Competitive athletes train for short periods in this range for maximal performance increase.&lt;/td&gt;
+							&lt;/tr&gt;
+							&lt;tr&gt;
+								&lt;td&gt;over &lt;span class=&quot;calc-highlight&quot; id=&quot;calc-output-table-5-min&quot;&gt;&lt;/span&gt;&lt;/td&gt;
+								&lt;td&gt;Red zone&lt;/td&gt;
+								&lt;td&gt;CSE (Competition Specific Endurance training)&lt;/td&gt;
+								&lt;td&gt;Over 90% of the maximum heart rate. Approaching the maximum heart rate. May be harmful to the heart in recreational athletes!&lt;/td&gt;
+							&lt;/tr&gt;
+						&lt;/tbody&gt;
+					&lt;/table&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;script type=&quot;text/javascript&quot;&gt;function downloadJSAtOnload() {var element = document.createElement(&quot;script&quot;);element.src = &quot;https://www.bergfreunde.eu/out/pictures/wysiwigpro/kalkulatoren/js/maximalpuls-logic.js&quot;;document.body.appendChild(element);}if (window.addEventListener)window.addEventListener(&quot;load&quot;, downloadJSAtOnload, false);else if (window.attachEvent)window.attachEvent(&quot;onload&quot;, downloadJSAtOnload);elsewindow.onload = downloadJSAtOnload;&lt;/script&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;nhịp-tim-nghỉ-và-nhịp-tim-tối-đa&quot;&gt;Nhịp tim nghỉ và nhịp tim tối đa&lt;/h2&gt;
+
+&lt;h2 id=&quot;làm-thế-nào-để-đo-nhịp-tim-của-bạn&quot;&gt;Làm thế nào để đo nhịp tim của bạn&lt;/h2&gt;
+
+&lt;h2 id=&quot;các-công-thức-đo-nhịp-tim-tối-đa&quot;&gt;Các công thức đo nhịp tim tối đa&lt;/h2&gt;
+
+&lt;h2 id=&quot;nhịp-tim-tối-ưu-cho-tập-luyện&quot;&gt;Nhịp tim tối ưu cho tập luyện&lt;/h2&gt;
+</description>
+        <pubDate>Fri, 07 May 2021 00:00:00 +0200</pubDate>
+        <link>thanh.be/heart-rate-zone/</link>
+        <guid isPermaLink="true">thanh.be/heart-rate-zone/</guid>
+        
+        <category>HRzone</category>
+        
+        <category>running</category>
+        
+        <category>heartrate</category>
+        
+        <category>measure</category>
+        
+        <category>calculation</category>
+        
+        
+        <category>run</category>
+        
+      </item>
     
       <item>
         <title>Lọc bỏ - Đánh giá - Tìm kiếm may mắn - Sự chắc chắn</title>
@@ -219,63 +386,6 @@
         
         
         <category>read</category>
-        
-      </item>
-    
-      <item>
-        <title>Education must also train one for quick, resolute and effective thinking.</title>
-        <description>&lt;p&gt;There are lots of powerful things you can do with the Markdown editor&lt;/p&gt;
-
-&lt;p&gt;If you’ve gotten pretty comfortable with writing in Markdown, then you may enjoy some more advanced tips about the types of things you can do with Markdown!&lt;/p&gt;
-
-&lt;p&gt;As with the last post about the editor, you’ll want to be actually editing this post as you read it so that you can see all the Markdown code we’re using.&lt;/p&gt;
-
-&lt;h2 id=&quot;special-formatting&quot;&gt;Special formatting&lt;/h2&gt;
-
-&lt;p&gt;As well as bold and italics, you can also use some other special formatting in Markdown when the need arises, for example:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;del&gt;strike through&lt;/del&gt;&lt;/li&gt;
-  &lt;li&gt;==highlight==&lt;/li&gt;
-  &lt;li&gt;*escaped characters*&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;writing-code-blocks&quot;&gt;Writing code blocks&lt;/h2&gt;
-
-&lt;p&gt;There are two types of code elements which can be inserted in Markdown, the first is inline, and the other is block. Inline code is formatted by wrapping any word or words in back-ticks, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;like this&lt;/code&gt;. Larger snippets of code can be displayed across multiple lines using triple back ticks:&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-2
-3
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;.my-link {
-    text-decoration: underline;
-}
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;If you want to get really fancy, you can even add syntax highlighting using Rouge.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/8.jpg&quot; alt=&quot;walking&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;reference-lists&quot;&gt;Reference lists&lt;/h2&gt;
-
-&lt;p&gt;The quick brown jumped over the lazy.&lt;/p&gt;
-
-&lt;p&gt;Another way to insert links in markdown is using reference lists. You might want to use this style of linking to cite reference material in a Wikipedia-style. All of the links are listed at the end of the document, so you can maintain full separation between content and its source or reference.&lt;/p&gt;
-
-&lt;h2 id=&quot;full-html&quot;&gt;Full HTML&lt;/h2&gt;
-
-&lt;p&gt;Perhaps the best part of Markdown is that you’re never limited to just Markdown. You can write HTML directly in the Markdown editor and it will just work as HTML usually does. No limits! Here’s a standard YouTube embed code as an example:&lt;/p&gt;
-
-&lt;p&gt;&lt;iframe style=&quot;width:100%;&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/Cniqsc9QfDo?rel=0&amp;amp;showinfo=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/p&gt;
-</description>
-        <pubDate>Tue, 12 Jun 2018 00:00:00 +0200</pubDate>
-        <link>thanh.be/education/</link>
-        <guid isPermaLink="true">thanh.be/education/</guid>
-        
-        
-        <category>Jekyll</category>
-        
-        <category>tutorial</category>
         
       </item>
     
