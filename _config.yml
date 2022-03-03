@@ -1,0 +1,62 @@
+# Site Info
+title: 𝓣𝓱𝓪𝓷𝓱.𝓫𝓮
+tagline: 'A draft book'
+description: 'My draft book for everything'
+baseurl: "/lanyon"
+url: http://t-thanh.github.io
+logo: '/public/logo.png'
+
+# Site configurations
+gems:
+  - jekyll-paginate
+markdown: kramdown
+kramdown:
+  input: GFM
+excerpt_separator: "<!-- more -->"
+sass:
+  style: compressed
+  sass_dir: _scss    
+paginate: 5
+paginate_path: '/blog/page:num'
+permalink: pretty
+
+version: 1.0.0
+
+# About/contact
+author:
+  name: Tien-Thanh
+  description: A <strong>developer, researcher and runner</strong> .
+  gravatar: 617be440806088316139494d2ec1658b # md5 hash of your email address
+  contact:
+    linkedin:  https://www.linkedin.com/in/tienthanh
+    github:    https://github.com/t-thanh
+    # facebook:  <hide>
+    twitter:   https://twitter.com/learnative
+    email:     tien.thanh<at>eu4m.eu
+
+# Navigation (2nd level links supported)
+nav:
+  Home:           
+    - '/'
+  Blog:           
+    - '/blog/'
+    - { Categories: '/blog/categories/' }
+    - { Tags: '/blog/tags/' }
+  About:          
+    - '/about/'
+  Github Project: 
+    - 'http://t-thanh.github.io/'
+
+# Where are tags and categories displayed
+tag_page: '/blog/tags/'
+category_page: '/blog/categories/'
+
+hero:
+  image: /public/img/we_will_be_giants_by_yalestewart.jpg
+  caption: Original Artwork &copy; <a href="http://yalestewart.deviantart.com/art/We-Will-Be-Giants-370176475">Yale Stewart</a>
+
+# Puglins
+mathjax: true # whether support mathjax
+google_analytics_token: 'UA-00000000-1' # leave blank if you don't want google analytics
+disqus_short_name: 'aitrify' # leave blank if you don't want disqus
+
