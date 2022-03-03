@@ -1,10 +1,10 @@
 # Site Info
 title: 𝓣𝓱𝓪𝓷𝓱.𝓫𝓮
-tagline: 'A draft book'
-description: 'My draft book for everything'
+tagline: '𝓣𝓱𝓪𝓷𝓱.𝓫𝓮'
+description: 'A draft book'
 baseurl: ""
 url: http://t-thanh.github.io
-logo: '/public/logo.png'
+logo: ''
 
 # Site configurations
 gems:
@@ -25,14 +25,14 @@ version: 1.0.0
 # About/contact
 author:
   name: Tien-Thanh
-  description: A <strong>developer, researcher and runner</strong> .
+  description: <strong>Researcher, reader & runner</strong> .
   gravatar: 617be440806088316139494d2ec1658b # md5 hash of your email address
   contact:
     linkedin:  https://www.linkedin.com/in/tienthanh
     github:    https://github.com/t-thanh
     # facebook:  <hide>
     twitter:   https://twitter.com/learnative
-    email:     tien.thanh<at>eu4m.eu
+    email:     tien.thanh@eu4m.eu
 
 # Navigation (2nd level links supported)
 nav:
