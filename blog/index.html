@@ -2,6 +2,27 @@
 layout: default
 title: Blog
 ---
+<div id="search-demo-container">
+  <div align="center">
+    <input type="search" id="search-input" placeholder="search...">
+  </div>
+  <ul id="results-container"></ul>
+</div>
+
+<script src="{{ site.baseurl }}/js/simple-jekyll-search.min.js"></script>
+
+<script>
+  window.simpleJekyllSearch = new SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '{{ site.baseurl }}/search.json',
+    searchResultTemplate: '<li><a href="{url}?query={query}" title="{desc}">{title}</a></li>',
+    noResultsText: 'No results found',
+    limit: 10,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+</script>
 
 <div class="posts">
   {% for post in paginator.posts %}
