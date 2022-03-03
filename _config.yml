@@ -32,7 +32,7 @@ author:
     github:    https://github.com/t-thanh
     # facebook:  <hide>
     twitter:   https://twitter.com/learnative
-    email:     tien.thanh@eu4m.eu
+    email:     tien.thanh<at>eu4m.eu
 
 # Navigation (2nd level links supported)
 nav:
@@ -58,5 +58,5 @@ hero:
 # Puglins
 mathjax: true # whether support mathjax
 google_analytics_token: 'UA-00000000-1' # leave blank if you don't want google analytics
-disqus_short_name: 'aitrify-be' # leave blank if you don't want disqus
+disqus_short_name: 'thanhbe' # leave blank if you don't want disqus
 
