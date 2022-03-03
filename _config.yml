@@ -2,7 +2,7 @@
 title: 𝓣𝓱𝓪𝓷𝓱.𝓫𝓮
 tagline: 'A draft book'
 description: 'My draft book for everything'
-baseurl: "/"
+baseurl: ""
 url: http://t-thanh.github.io
 logo: '/public/logo.png'
 
@@ -45,7 +45,7 @@ nav:
   About:          
     - '/about/'
   Github Project: 
-    - 'http://t-thanh.github.io/'
+    - 'https://t-thanh.github.io/'
 
 # Where are tags and categories displayed
 tag_page: '/blog/tags/'
@@ -58,5 +58,5 @@ hero:
 # Puglins
 mathjax: true # whether support mathjax
 google_analytics_token: 'UA-00000000-1' # leave blank if you don't want google analytics
-disqus_short_name: 'aitrify' # leave blank if you don't want disqus
+disqus_short_name: 'aitrify-be' # leave blank if you don't want disqus
 
