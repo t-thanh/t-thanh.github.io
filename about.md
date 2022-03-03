@@ -3,28 +3,21 @@ layout: page
 title: About
 ---
 
+My name is Tien-Thanh Nguyen - you can call me TT. I'm robotics reseacher, working on all kinds of cool stuffs: Unmanned Vehicles (UAV, UGV, USV, ...), robotic manipulation, perception, and integration. 
+
+I love applying and sharing my knowledge to build things that people can try, test and eventually improve. You can find most of my opensource work in this blog and in my [<b>GITHUB</b>](https://github.com/t-thanh).
+
+I try to read more frequently, and start writing as well. This website could be great way to setup my reading and writing habit. You can join me in [<b>GoodReads</b>](https://www.goodreads.com/t-thanh).
+
+I have great passion for marathon running. Follow me in [<b>Strava</b>](https://www.strava.com/athletes/t-thanh).
+
+----
+## This Website
+
+This blog is a summary of my practicing process, as well as showcase of my progress in research, reading or running. I hope with this website I can get to know people with similar passions who can join me on the journey.
+
+Feel free to [reach out](mailto:tien.thanh@eu4m.eu) to reach out to say Hi!
+
 <p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
+  Disclaimer: All opinions expressed in this site are solely my own opinions at the writing moment.
 </p>
-
-In the novel, *The Strange Case of Dr. Jeykll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
-
-There are currently two themes built on Poole:
-
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
-
-Learn more and contribute on [GitHub](https://github.com/poole).
-
-## Setup
-
-Some fun facts about the setup of this project include:
-
-* Built for [Jekyll](http://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Sublime Text 2](http://sublimetext.com), an amazing code editor
-* Designed and developed while listening to music like [Blood Bros Trilogy](https://soundcloud.com/maddecent/sets/blood-bros-series)
-
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
-
-Thanks for reading!
