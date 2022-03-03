@@ -2,7 +2,7 @@
 title: 𝓣𝓱𝓪𝓷𝓱.𝓫𝓮
 tagline: 'A draft book'
 description: 'My draft book for everything'
-baseurl: "/lanyon"
+baseurl: "/"
 url: http://t-thanh.github.io
 logo: '/public/logo.png'
 
